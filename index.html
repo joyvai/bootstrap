@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap Cheetsheet</title>
-
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .nav{
+        margin-bottom:0px;
+      }
+
+    </style>
   </head>
   <body>
     <!--container,page header and lead is a bootstrap class.  -->
@@ -112,8 +117,162 @@
           <button class="btn btn-danger">Danger</button>
           <button class="btn btn-muted">muted</button>
       </div>
+      <hr>
 
+      <div class="container">
+        <form>
+          <div class="form-group">
+              <label>Name</label>
+              <input type="text" class="form-control" placeholder="Add Name">
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" placeholder="Add Email">
+          </div>
+
+          <div class="form-group">
+              <label>Message</label>
+              <textarea class="form-control" placeholder="Add message"></textarea>
+          </div>
+          <div class="form-group">
+              <label>Gender</label>
+              <select class="form-control">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">other</option>
+              </select>
+          </div>
+
+          <div class="form-group">
+              <label>Upload a file</lable>
+              <input type="file">
+              <p class="help-block">only png and jpeg allowed.</p>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Check me out
+            </label>
+          </div><br/>
+        </form>
+        <hr>
+        <form class="form-inline">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" placeholder="Add Email">
+          </div>
+
+          <div class="form-group">
+            <label>Passwords</label>
+            <input type="passwords" class="form-control" placeholder="Passwords">
+          </div>
+          <button type="submit" class="btn btn-success">Login</button>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> remember me
+            </label>
+          </div>
+        </form>
+      </div>
     </div>
+
+    <hr>
+
+    <div class="container">
+      <table class="table table-striped table-hover table-bordered table-condensed">
+        <tr class="danger">
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+        </tr>
+        <tr class="success">
+          <td>james</td>
+          <td>arthur</td>
+          <td>21</td>
+        </tr>
+
+        <tr class="primary">
+          <td>julia</td>
+          <td>churcil</td>
+          <td>20</td>
+        </tr>
+        <tr class="success">
+          <td>Agnes</td>
+          <td>Monica</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>rajon</td>
+          <td>sheettty</td>
+          <td>22</td>
+        </tr>
+      </table>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+          <div class="col-md-4">
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+    </div>
+
+          <!-- navbar -->
+
+          <nav class="navbar navbar-reverse">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Bootstap Cheet Sheet</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     <ul class="nav navbar-nav">
+       <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+       <li><a href="#">Profile</a></li>
+       <li class="dropdown">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Logout <span class="caret"></span></a>
+         <ul class="dropdown-menu">
+           <li><a href="#">settings</a></li>
+           <li><a href="#">score</a></li>
+           <li><a href="#">sell</a></li>
+           <li role="separator" class="divider"></li>
+           <li><a href="#">sell </a></li>
+           <li role="separator" class="divider"></li>
+           <li><a href="#">Buy</a></li>
+         </ul>
+       </li>
+     </ul>
+
+        <!--JUMPBOTRON  -->
+  <div class="jumbotron text-center">
+    <div class="container">
+        <h1>Hello, world!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+</div>
+
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
